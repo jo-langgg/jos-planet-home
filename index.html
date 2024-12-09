@@ -6,6 +6,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
     <!-- Made by Joanne Lang on December 10, 2024 -->
     <style>
+      /*------------------ FONTS --------------------*/
+      @font-face {
+        font-family: Alagard;
+        src: url(alagard.ttf);
+      }
+      
+      @font-face {
+        font-family: Custom;
+        src: url(CustomFontTtf12H10.ttf);
+      }
+      /*--------------------------------------------*/
+      
       body {
         color: black;
         background-color: #F2F2EF; /*off-white*/
@@ -15,16 +27,18 @@
       }
 
       .header {
+        font-size: 0.9em;
         height: 200px;
         width: 100%;
         padding: 10px;
       }
       
       #nav {
+        font-family: Custom;
+        font-size: 18px;
         list-style-type: none;
-        
         padding: 0px 0px 0px 0px;
-        border-width: 2px 0px 2px 0px;
+        border-width: 1.5px 0px 1.5px 0px;
         border-style: solid;
         border-color: black;
         margin: 0px 0px 0px 0px;
@@ -40,7 +54,7 @@
         display: block;
         color: #0015D3; /*blue*/
         text-align: center;
-        padding: 0px 24px 11px 24px;
+        padding: 0px 24px 15px 24px;
         text-decoration: none;
       }
       
@@ -65,22 +79,25 @@
 
 
 
-      @font-face {
+      
+      
+      .small {
         font-family: Alagard;
-        src: url(alagard.ttf);
+        font-size: 30px;
       }
-
-      h1 {
+      
+      .large {
         font-family: Alagard;
+        font-size: 96px;
       }
     </style>
   </head>
   <body>
     <div class="header">
       <!--------------- HEADER ------------------->
-      <div id="site">
-        <h1>Jo's Planet</h1>
-      </div>
+        <h1>
+          <span class="small">Jo's Planet</span>
+      </h1>
       <p>easy and affordable recipes for the average broke uni student</p>
       <div id="nav">
         <ul>
@@ -97,11 +114,9 @@
     <!--------------- MAIN CONTENT ------------------->
     <div class="wrapper">
       <!-- MAIN -->
-      <h1>
-        Welcome!
-      </h1>
+      <h1><span class="large">Welcome!</span></h1>
       <p>
-        Cooking is hard enough already for normal adults. But for us young adults who have just recently moved out and are living on our own for the first time ever? It can get hella overwhelming. However, cooking can be made a whole lot easier when you’re following yummy and easy recipes. It’s just like what that rat said from Ratatouille — anyone can cook!
+        Cooking is hard enough already for normal adults. But for us young adults who have just recently moved out and are living on our own for the first time ever? It can get hella overwhelming. However, cooking can be made a whole lot easier when you’re following yummy and easy recipes. It’s just like what that rat said from <i>Ratatouille</i> — anyone can cook!
       </p>
       <p>
         My name is Jo and I turn struggle meals into struggle experiences. Join me as I walk through a full four-course meal that will not only leave your wallet happy, but your tastebuds as well.
@@ -112,7 +127,7 @@
       <img src="chicken_veggie_udon.jpg" alt="chicken veggie udon" width="20%">
       <img src="melona_soju.jpg" alt="melona soju" width="20%">
 
-      <h1>Recipe Index</h1>
+      <h1><span class="large">Recipe Index</span></h1>
       <table style="width:100%">
         <tr>
           <th>COURSE</th>
@@ -136,7 +151,7 @@
         </tr>
       </table>
 
-      <h1>A Lil’ About Me</h1>
+      <h1><span class="large">A Lil’ About Me</span></h1>
       <p>
         I’m Joanne Lang, a second year university student at the University of Waterloo. Although I’ve kind of gotten the hang of planning meals, budgeting, and meal-prepping, I still sometimes cave and opt for food out when I’m lazy. But I like to think that I’ve gotten a lot better at grocery shopping and cooking this past year! It all comes down to practice and knowing where to find cool resources like this one to help guide you along. I am still by no means GOOD at cooking haha. But I haven’t starved or given myself food poisoning yet. A win is a win. If you’d like to reach out, you can find my email <a href="mailto:j2lang@uwaterloo.ca">here</a>. Happy cooking!
       </p>
