@@ -158,21 +158,26 @@
         border: 1.5px solid black;
         border-collapse: collapse;
       }
+    
+      .container2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 100px 0px 0px 0px;
+        
+  }
+      .text {
+        float: left;
+  }
+  
+      .image {
+    max-width: 25%;
+    max-height:15%;
+    float: left;
+  }
+  
+  
       
-      /*#container2 {
-        border: 1.5px solid black;
-        width: 808px;
-        height: auto;
-        background-color: transparent;
-        clear: both;
-        position: relative;
-      }*/
-      
-      #photo5 {
-        float: right;
-        margin: 0px 0px 0px 0px;
-        border: 2px solid black;
-      }
     </style>
   </head>
 
@@ -252,18 +257,28 @@
       </table>
 
       <div id="container2">
+        <div id="text">
+          
+      
+        </div>
+        
+        </div>
+      
+      <div class="container2">
+      <div class="text">
         <div class="hleft">
         <h1><span class="large">A Lil’ About Me</span></h1>
       </div>
-      <div class="pgroup">
+        <div class="pgroup">
         <p>
           I’m Joanne Lang, a second year university student at the University of Waterloo. Although I’ve kind of gotten the hang of planning meals, budgeting, and meal-prepping, I still sometimes cave and opt for food out every now and then. But I like to think that I’ve gotten a lot better at grocery shopping and cooking this past year! It all comes down to practice and knowing where to find cool resources like this one to help guide you along. I am still by no means GOOD at cooking haha. But I haven’t starved or given myself food poisoning yet. A win is a win. If you’d like to reach out, you can find my email <a href="mailto:j2lang@uwaterloo.ca">here</a>. Happy cooking!
         </p>
       </div>
-        </div>
-      <div id="photo5">
+      </div>
+      <div class="image">
         <img src="me.jpg" alt="Jo Lang">
-        </div>
+      </div>
+    </div>
       
       <!------------ END OF MAIN CONTENT ---------------->
     </div>
