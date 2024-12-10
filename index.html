@@ -30,9 +30,12 @@
 
       .header {
         font-size: 0.9em;
-        height: 200px;
+        height: 133px;
         width: 100%;
         padding: 10px;
+        background-color: #F2F2EF;
+        position: sticky;
+        top: 0;
       }
 
       #nav {
@@ -73,12 +76,6 @@
         background-color: #F2F2EF;
       }
 
-      table,
-      th,
-      td {
-        border: 2px solid black;
-      }
-
       .small {
         font-family: Alagard;
         font-size: 30px;
@@ -90,11 +87,11 @@
       }
 
       .hleft {
-        margin: 90px 0px;
+        margin: 110px 0px 90px 0px;
       }
 
       .hright {
-        margin: 90px 0px;
+        margin: 110px 0px 90px 0px;
         float: right;
       }
 
@@ -103,14 +100,14 @@
       }*/
 
       #p1container {
-        margin: 90px 0px;
+        margin: 90px 0px 110px 0px;
       }
 
       .pgroup {
         width: 808px;
       }
 
-      #gallery {
+      #container1 {
         width: 1212px;
         height: 404px;
         background-color: transparent;
@@ -118,7 +115,7 @@
         position: relative;
         bottom: 20px;
       }
-      
+
       #photo1 {
         width: 303px;
         height: 404px;
@@ -126,7 +123,7 @@
         float: left;
         padding: 0px;
       }
-      
+
       #photo2 {
         width: 303px;
         height: auto;
@@ -134,7 +131,7 @@
         float: left;
         padding: 0px;
       }
-      
+
       #photo3 {
         width: 303px;
         height: 404px;
@@ -142,7 +139,7 @@
         float: left;
         padding: 0px;
       }
-      
+
       #photo4 {
         width: 303px;
         height: 404px;
@@ -150,13 +147,35 @@
         float: left;
         padding: 0px;
       }
-      
+
       img {
         width: 280px;
       }
+
+      table,
+      th,
+      td {
+        border: 1.5px solid black;
+        border-collapse: collapse;
+      }
       
+      /*#container2 {
+        border: 1.5px solid black;
+        width: 808px;
+        height: auto;
+        background-color: transparent;
+        clear: both;
+        position: relative;
+      }*/
+      
+      #photo5 {
+        float: right;
+        margin: 0px 0px 0px 0px;
+        border: 2px solid black;
+      }
     </style>
   </head>
+
   <body>
     <div class="header">
       <!--------------- HEADER ------------------->
@@ -186,12 +205,12 @@
         <div class="pgroup">
           <p>
             Cooking is hard enough already for normal adults. But for us young adults who have just recently moved out and are living on our own for the first time ever? It can get hella overwhelming. However, cooking can be made a whole lot easier when you’re following yummy and easy recipes. It’s just like what that rat said from <i>Ratatouille</i> — anyone can cook!<br><br>
-            My name is Jo and I turn struggle meals into struggle experiences. Join me as I walk through a full four-course meal that will not only leave your wallet happy, but your tastebuds as well.
+            My name is Jo and I turn struggle meals into struggle <b>experiences</b>. Join me as I walk through a full four-course meal that will leave not only your wallet happy, but your tastebuds as well.
           </p>
         </div>
       </div>
 
-      <div id="gallery">
+      <div id="container1">
         <div id=photo1>
           <img src="jors_doeuvre.jpg" alt="jo'rs d'oeuvres" width="75%">
         </div>
@@ -211,8 +230,8 @@
       </div>
       <table style="width:100%">
         <tr>
-          <th>COURSE</th>
-          <th>RECIPE</th>
+          <th><b>COURSE</b></th>
+          <th><b>RECIPE</b></th>
         </tr>
         <tr>
           <td>HORS D'OEUVRES</td>
@@ -232,15 +251,20 @@
         </tr>
       </table>
 
-      <div class="hleft">
+      <div id="container2">
+        <div class="hleft">
         <h1><span class="large">A Lil’ About Me</span></h1>
       </div>
       <div class="pgroup">
         <p>
-          I’m Joanne Lang, a second year university student at the University of Waterloo. Although I’ve kind of gotten the hang of planning meals, budgeting, and meal-prepping, I still sometimes cave and opt for food out when I’m lazy. But I like to think that I’ve gotten a lot better at grocery shopping and cooking this past year! It all comes down to practice and knowing where to find cool resources like this one to help guide you along. I am still by no means GOOD at cooking haha. But I haven’t starved or given myself food poisoning yet. A win is a win. If you’d like to reach out, you can find my email <a href="mailto:j2lang@uwaterloo.ca">here</a>. Happy cooking!
+          I’m Joanne Lang, a second year university student at the University of Waterloo. Although I’ve kind of gotten the hang of planning meals, budgeting, and meal-prepping, I still sometimes cave and opt for food out every now and then. But I like to think that I’ve gotten a lot better at grocery shopping and cooking this past year! It all comes down to practice and knowing where to find cool resources like this one to help guide you along. I am still by no means GOOD at cooking haha. But I haven’t starved or given myself food poisoning yet. A win is a win. If you’d like to reach out, you can find my email <a href="mailto:j2lang@uwaterloo.ca">here</a>. Happy cooking!
         </p>
       </div>
-      <img src="me.jpg" alt="Jo Lang" width="20%">
+        </div>
+      <div id="photo5">
+        <img src="me.jpg" alt="Jo Lang">
+        </div>
+      
       <!------------ END OF MAIN CONTENT ---------------->
     </div>
 
